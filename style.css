@@ -103,7 +103,7 @@ body{
 
 @media (min-width: 768px) {
   .container {
-    flex-direction: row;
+    flex-direction: column; /* Keep top-section full width */
     max-width: 700px;
     margin: 100px auto;
     border-radius: 10px;
@@ -117,10 +117,17 @@ body{
     padding: 40px;
   }
 
+  .bottom-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
   .middle-section, .bottom-section {
     width: 50%;
     padding: 40px;
     height: auto;
   }
 }
+
 
